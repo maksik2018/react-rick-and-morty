@@ -1,0 +1,121 @@
+.individual-character {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+.name-wrapper {
+  text-align: center;
+  text-shadow: 2px 2px 0px rgb(0, 225, 255), -2px -2px 0px red;
+}
+
+.name-wrapper h4 {
+  font-size: 3.3em;
+  margin: 25px 0;
+}
+
+.background-wrapper {
+  margin-top: 40px;
+  border-radius: 15px;
+  max-height: 3000px;
+  width: 350px;
+  background-image: linear-gradient(
+    to right,
+    #de21f7 0%,
+    #35ffbc 19%,
+    #00ff4c 42%,
+    #0004ff 79%,
+    #7700ff 100%
+  );
+  position: relative;
+}
+
+.individual-character-box {
+  display: flex;
+  flex-direction: column;
+  outline-offset: -10px;
+  background: white;
+  max-height: 3000px;
+  width: 350px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 25px;
+}
+
+.individual-character-box img {
+  width: 70%;
+  border-radius: 15px 15px 0 0;
+}
+
+.individual-character-box .description {
+  list-style: none;
+  padding: 0px 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: #070042;
+}
+
+.back-button-wrapper {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: -50px;
+  transform: translate(-50%, 50%);
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #06003dd2;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  border: none;
+  z-index: 1;
+  box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.664);
+  cursor: pointer;
+}
+
+.back-button:hover {
+  animation: animate 8s linear infinite;
+  color: #06003d;
+}
+
+.back-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.back-button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+.episode {
+ font-size: 15px;
+}

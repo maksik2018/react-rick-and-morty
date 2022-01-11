@@ -1,0 +1,80 @@
+.filter-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.name-search-container {
+  border: 2px solid rgb(255, 0, 128);
+  border-radius: 30px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgb(255, 0, 128);
+}
+
+.name-search-container:hover {
+  border: 2px solid rgb(255, 177, 216);
+}
+
+.search-bar-input {
+  flex-grow: 1;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 46px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.search-bar-input:focus {
+  outline: 0;
+}
+
+.name-search-container:focus-within {
+  width: 370px;
+}
+
+.name-search-container:focus-within .search-bar-input {
+  opacity: 1;
+  cursor: text;
+  background-color: transparent;
+  width: 311px;
+}
+
+.filter-form-button {
+  font-size: 1.2em;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(255, 0, 128);
+  height: 39px;
+  width: 39px;
+  margin-top: 1px;
+  margin-left: auto;
+  /* transition: 600ms ease-in-out; */
+}
+
+.name-search-container:focus-within .filter-form-button {
+  background-color: rgb(255, 0, 128);
+  color: black;
+}
+
+.mag-glass {
+  margin: 3px 2px 0 2px;
+}
+

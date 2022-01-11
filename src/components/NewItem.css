@@ -1,0 +1,10 @@
+.btn-clc{
+  position: relative;
+  z-index: 1000;
+  background: rgb(32, 107, 178);
+  color: white;
+  border: none;
+  cursor: pointer;
+   padding: 8px;
+   margin: 8px;
+}

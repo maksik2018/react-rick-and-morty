@@ -1,0 +1,38 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: [header] 80px [main] auto;
+  color: whitesmoke;
+}
+
+.header {
+  background-image: linear-gradient(
+    to right,
+    #330867 0%,
+    #c330d0 20%,
+    #4030d0 60%,
+    #35d030 80%,
+    #30cfd0 100%
+  );
+  backdrop-filter: blur(3px);
+  position: relative;
+}
+
+.main {
+  overflow-y: scroll;
+  background-color: rgba(5, 1, 10, 0.959);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 603px) {
+  .header {
+    background-image: linear-gradient(
+      to right,
+      #000000 0%,
+      #000000 30%,
+      #ff0000 100%
+    );
+    filter: blur(35px);
+    position: relative;
+  }
+}
